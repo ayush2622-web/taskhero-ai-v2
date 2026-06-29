@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://taskhero-ai-v2.onrender.com/api",
 });
 export const getTasks = () => API.get("/tasks");
 
