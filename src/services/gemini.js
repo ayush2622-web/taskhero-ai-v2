@@ -1,8 +1,8 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
-console.log(import.meta.env.VITE_GEMINI_API_KEY);
+console.log(import.meta.env.VITE_GEMINI_KEY);
 
 const genAI = new GoogleGenerativeAI(
-  import.meta.env.VITE_GEMINI_API_KEY
+  import.meta.env.VITE_GEMINI_KEY
 );
 
 export async function generateTaskPlan(tasks) {
